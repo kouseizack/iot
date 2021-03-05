@@ -2,6 +2,7 @@ Contains a server and Edge progrmamme.
 
 Server-side - A flask based server handling post requests sent by client at the route "add_data" and adds data into a csv file on server side "op.csv"
 Note: Flask server is run locally.
+Server randomly either services the request and sends successful response or sends "401" for unsuccessful request.
 
 Edge: Forever executing Edge programme responsible for reading streaming sensor data (here simulated by an exisiting "dataset.csv" file).
 
